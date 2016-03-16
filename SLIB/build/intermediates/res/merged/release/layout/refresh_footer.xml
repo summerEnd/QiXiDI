@@ -13,4 +13,4 @@
         android:textColor="#fff"
         android:textSize="20sp"
         android:text="上拉加载更多"/>
-</LinearLayout><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/layout/refresh_footer.xml -->
+</LinearLayout>

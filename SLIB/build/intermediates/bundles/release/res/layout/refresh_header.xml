@@ -14,4 +14,4 @@
         android:textColor="#3a3"
         android:textSize="20sp"
         android:text="下拉刷新"/>
-</LinearLayout><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/layout/refresh_header.xml -->
+</LinearLayout>

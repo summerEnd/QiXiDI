@@ -8,4 +8,4 @@
     <item
         android:drawable="@drawable/intro_item_manrun_2"
         android:duration="200"/>
-</animation-list><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/drawable/man_run.xml -->
+</animation-list>

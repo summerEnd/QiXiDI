@@ -24,4 +24,4 @@
         android:gravity="center_horizontal"
         android:id="@+id/app_name"/>
 
-</LinearLayout><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/layout/share_item.xml -->
+</LinearLayout>

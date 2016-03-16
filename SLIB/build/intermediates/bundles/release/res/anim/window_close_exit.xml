@@ -6,4 +6,4 @@
         android:duration="@integer/windowAnimDuration"
         android:fromXDelta="0%"
         android:toXDelta="100%" />
-</set><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/window_close_exit.xml -->
+</set>

@@ -11,4 +11,4 @@
             <solid android:color="@color/album_btn_normal_color" />
         </shape>
     </item>
-</selector><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/drawable/btn_album_text.xml -->
+</selector>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -23,4 +22,3 @@
         android:textSize="15sp"
         android:text="拍摄照片" />
 </LinearLayout>
-<!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/layout/camera_header.xml -->

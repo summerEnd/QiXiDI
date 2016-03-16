@@ -12,4 +12,4 @@
         android:background="#9000"
         android:fromAlpha="1"
         android:toAlpha="0.6" />
-</set><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/window_open_exit.xml -->
+</set>

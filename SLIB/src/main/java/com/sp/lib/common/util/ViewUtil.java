@@ -3,6 +3,7 @@ package com.sp.lib.common.util;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.view.View;
+import android.view.ViewGroup;
 
 import static android.view.View.OnClickListener;
 
@@ -37,6 +38,17 @@ public class ViewUtil {
         else {
             //noinspection deprecation
             view.setBackgroundDrawable(d);
+        }
+    }
+
+    /**
+     * 让View变成正方形的
+     */
+    public static void makeSquare(View v,int size){
+        ViewGroup.LayoutParams lp = v.getLayoutParams();
+        if (lp!=null){
+            lp.width=size;
+            lp.height=size;
         }
     }
 }

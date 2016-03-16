@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".HabitatApp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -18,6 +19,7 @@
         <activity android:name=".SecondActivity"
             android:theme="@style/Translucent">
         </activity>
+        <activity android:name="com.sp.lib.activity.PhotoAlbumActivity"/>
     </application>
 
 </manifest>

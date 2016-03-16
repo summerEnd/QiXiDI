@@ -5,4 +5,3 @@
     android:duration="400"
     android:interpolator="@anim/cycle" />
 
-<!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/shake.xml -->

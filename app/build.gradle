@@ -67,4 +67,5 @@ dependencies {
             'com.jakewharton:butterknife:7.0.1'
     )
     compile 'com.eftimoff:android-pathview:1.0.8@aar'
+    compile project(':SLIB')
 }

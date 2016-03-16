@@ -13,4 +13,4 @@
         android:background="#9000"
         android:fromAlpha="0.6"
         android:toAlpha="1" />
-</set><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/window_close_enter.xml -->
+</set>

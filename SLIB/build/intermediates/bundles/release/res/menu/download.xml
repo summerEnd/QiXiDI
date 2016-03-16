@@ -6,4 +6,4 @@
     <item
         android:title="查看"
         android:id="@+id/check"/>
-</menu><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/menu/download.xml -->
+</menu>

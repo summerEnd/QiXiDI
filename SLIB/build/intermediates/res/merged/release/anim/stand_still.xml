@@ -5,4 +5,4 @@
         android:fromAlpha="1"
         android:toAlpha="1"
         android:duration="@integer/slib_anim_duration"/>
-</set><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/stand_still.xml -->
+</set>

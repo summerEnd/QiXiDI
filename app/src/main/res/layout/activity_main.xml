@@ -9,7 +9,7 @@
     tools:context="com.sumauto.app.MainActivity">
 
 
-    <com.sumauto.app.adapter.FloatHeadRecyclerView
+    <com.sp.lib.widget.list.FloatHeadRecyclerView
         android:id="@+id/floatHeaderView"
         android:layout_width="match_parent" android:layout_height="0dp"
         android:layout_weight="1"/>

@@ -1,6 +1,7 @@
 package com.sumauto.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -10,9 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.sumauto.app.adapter.FloatHeadRecyclerView;
-import com.sumauto.app.adapter.base.BaseHolder;
-import com.sumauto.app.adapter.base.ListAdapter;
+import com.sp.lib.activity.PhotoAlbumActivity;
+import com.sp.lib.common.util.RandomUtils;
+import com.sp.lib.widget.list.FloatHeadRecyclerView;
+import com.sp.lib.widget.list.adapter.BaseHolder;
+import com.sp.lib.widget.list.adapter.ListAdapter;
 import com.sumauto.app.bean.Bean;
 import com.sumauto.app.bean.DemoBean;
 
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DemoAdapter           adapter;
     private FloatHeadRecyclerView mFloatHeaderView;
-    private DemoHolder mViewHolder;
+    private DemoHolder            mViewHolder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +80,12 @@ public class MainActivity extends AppCompatActivity {
             super(itemView);
             tv_date = (TextView) itemView.findViewById(R.id.tv_date);
             tv_content = (TextView) itemView.findViewById(R.id.tv_content);
+        }
+
+        @Override
+        public void onClick(View v) {
+            super.onClick(v);
+            startActivity(new Intent(v.getContext(), PhotoAlbumActivity.class));
         }
 
         @Override

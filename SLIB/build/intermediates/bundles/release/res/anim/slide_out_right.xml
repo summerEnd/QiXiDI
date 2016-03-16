@@ -5,4 +5,4 @@
         android:duration="@integer/slib_anim_duration"
         android:fromXDelta="0%"
         android:toXDelta="100%"/>
-</set><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/slide_out_right.xml -->
+</set>

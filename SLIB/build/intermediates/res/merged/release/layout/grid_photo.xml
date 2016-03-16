@@ -5,4 +5,3 @@
     android:layout_width="@dimen/photo_album_item_size"
     android:scaleType="centerCrop"
     android:layout_height="@dimen/photo_album_item_size" />
-<!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/layout/grid_photo.xml -->

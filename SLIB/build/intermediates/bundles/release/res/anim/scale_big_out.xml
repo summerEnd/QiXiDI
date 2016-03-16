@@ -14,4 +14,4 @@
         android:fromAlpha="0.7"
         android:toAlpha="0.1"
         android:duration="@integer/slib_anim_duration"/>
-</set><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/anim/scale_big_out.xml -->
+</set>

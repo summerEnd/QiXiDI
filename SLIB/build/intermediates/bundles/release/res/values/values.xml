@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/menu_drawer.xml -->
-    <eat-comment/>
     <attr format="reference" name="menuDrawerStyle"/>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/photo_album.xml -->
-    <eat-comment/>
     <color name="album_btn_normal_color">#cfcfcf</color>
     <color name="album_btn_pressed_color">#333333</color>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/pager_slide.xml -->
-    <eat-comment/>
     <color name="background_tab_pressed">#6633B5E5</color>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/menu_drawer.xml -->
-    <eat-comment/>
     <color name="md__defaultBackground">#FF555555</color>
     <declare-styleable name="ITab"><attr format="color|reference" name="indicator"/><attr format="boolean" name="showIndicator"/><attr format="dimension" name="indicateHeight"/></declare-styleable>
     <declare-styleable name="LockView"><attr format="reference" name="src"/><attr format="dimension" name="verticalSpacing"/><attr format="dimension" name="horizontalSpacing"/><attr format="string" name="password"/><attr format="reference" name="lineColor"/><attr format="color" name="failColor"/><attr format="color" name="successColor"/><attr format="enum" name="layoutSquare"><enum name="width" value="1"/><enum name="height" value="2"/><enum name="shorter" value="3"/><enum name="longer" value="4"/></attr></declare-styleable>
@@ -19,19 +11,11 @@
     <declare-styleable name="ParallaxContainer"><attr format="float" name="a_in"/><attr format="float" name="a_out"/><attr format="float" name="x_in"/><attr format="float" name="x_out"/><attr format="float" name="y_in"/><attr format="float" name="y_out"/></declare-styleable>
     <declare-styleable name="PasswordInputView"><attr format="color" name="borderColor"/><attr format="color" name="contentColor"/><attr format="dimension" name="borderRadius"/><attr format="integer" name="passwordLength"/><attr format="color" name="passwordColor"/><attr format="dimension" name="passwordRadius"/><attr format="dimension" name="cellWidth"/></declare-styleable>
     <declare-styleable name="SimpleTab"><attr format="reference" name="tabIcon"/><attr format="dimension" name="tabTextSize"/><attr format="boolean" name="tabChecked"/><attr format="color|reference" name="tabTextColors"/><attr format="dimension" name="tabIconPadding"/><attr format="string" name="tabText"/></declare-styleable>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/dimens.xml -->
-    <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="button_margin">3dp</dimen>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/picture_dimens.xml -->
-    <eat-comment/>
     <dimen name="pciture_view_pager_margin">80dp</dimen>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/photo_album.xml -->
-    <eat-comment/>
     <dimen name="photo_album_item_size">120dp</dimen>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/picture_dimens.xml -->
-    <eat-comment/>
     <dimen name="picture_action_bar_button_margin">0dp</dimen>
     <dimen name="picture_action_bar_height">48dp</dimen>
     <dimen name="picture_action_bar_page_index_text_size">18dp</dimen>
@@ -50,27 +34,17 @@
     <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
     <dimen name="picture_reload_text_size">16dp</dimen>
     <dimen name="picture_user_guide_margin">8dp</dimen>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/dimens.xml -->
-    <eat-comment/>
     <dimen name="tab_corners">8px</dimen>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/photo_album.xml -->
-    <eat-comment/>
     <drawable name="album_btn_normal">#485050</drawable>
     <drawable name="album_btn_pressed">#808383</drawable>
     <drawable name="tran">#00000000</drawable>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/ids.xml -->
-    <eat-comment/>
     <item name="NotifyCationId_1" type="id"/>
     <item name="NotifyCationId_2" type="id"/>
     <item name="anim_info" type="id"/>
     <item name="brand_add_id" type="id"/>
     <item name="clear" type="id"/>
     <item name="gridview" type="id"/>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/attrs.xml -->
-    <eat-comment/>
     <item name="listChildTag" type="id"/>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/menu_drawer.xml -->
-    <eat-comment/>
     <item name="mdActiveViewPosition" type="id"/>
     <item name="mdContent" type="id"/>
     <item name="mdMenu" type="id"/>
@@ -79,8 +53,6 @@
     <item name="md__menu" type="id"/>
     <item name="md__translationX" type="id"/>
     <item name="md__translationY" type="id"/>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/ids.xml -->
-    <eat-comment/>
     <item name="parallax_pager" type="id"/>
     <item name="parallax_view_tag" type="id"/>
     <item name="scrollview" type="id"/>
@@ -95,13 +67,9 @@
     <item name="slib_toast_text_1" type="id"/>
     <item name="title" type="id"/>
     <item name="webview" type="id"/>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/anim.xml -->
-    <eat-comment/>
     <integer name="slib_anim_duration">280</integer>
     <integer name="windowAnimDuration">300</integer>
     <integer name="windowAnimDurationLong">400</integer>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="all">全部</string>
     <string name="alread_newest">已经是最新版本了！</string>
@@ -110,28 +78,21 @@
     <string name="i_know">我知道了</string>
     <string name="landscape">横屏</string>
     <string name="loadFaile">加载失败</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/menu_drawer.xml -->
-    <eat-comment/>
+    <string name="loading">加载中…</string>
     <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
     <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="network_is_not_open">没有可用的网络连接</string>
     <string name="no">取消</string>
+    <string name="noData_refresh">没有数据，刷新试试</string>
+    <string name="noMore">没有更多了</string>
     <string name="other">其他</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/pull_refresh_strings.xml -->
-    <eat-comment/>
     <string name="picture_image_loading">正在加载…</string>
     <string name="picture_load_image_failed">点击屏幕，重新加载</string>
     <string name="picture_next_album">下一组：</string>
     <string name="picture_previous_album">上一组：</string>
     <string name="picture_save_fail">保存图片失败</string>
     <string name="picture_save_succeed">图片已保存到相册</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="portrait">竖屏</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/pull_refresh_strings.xml -->
-    <eat-comment/>
     <string name="pull_to_refresh_footer_hint_ready">松开后加载</string>
     <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
     <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
@@ -147,18 +108,10 @@
     <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
     <string name="pushmsg_center_pull_release_text">松开获取更多</string>
     <string name="pushmsg_center_pull_up_text">松开加载更多</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="request_is_failed">请求失败！</string>
     <string name="title_activity_main">MainActivity</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/pull_refresh_strings.xml -->
-    <eat-comment/>
     <string name="xsearch_loading">正在加载中…</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="yes">确定</string>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/menu_drawer.xml -->
-    <eat-comment/>
     <style name="Widget"/>
     <style name="Widget.MenuDrawer">
         <item name="mdMenuBackground">@color/md__defaultBackground</item>
@@ -166,13 +119,9 @@
         <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
         <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
     </style>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/debug.xml -->
-    <eat-comment/>
     <style name="debug_button" parent="android:Widget.Button">
 
     </style>
-    <!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/values/photo_album.xml -->
-    <eat-comment/>
     <style name="popup_window_animation">
         <item name="android:windowEnterAnimation">@anim/window_enter</item>
         <item name="android:windowExitAnimation">@anim/window_exit</item>

@@ -2,4 +2,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="true" android:drawable="@drawable/indicator_on" />
     <item android:state_checked="false" android:drawable="@drawable/indicator_off" />
-</selector><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/drawable/indicator_dot.xml -->
+</selector>

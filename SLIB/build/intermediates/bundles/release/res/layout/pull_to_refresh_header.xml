@@ -71,4 +71,4 @@
             android:indeterminateDrawable="@anim/update_loading_progressbar_anim"
             android:visibility="invisible"/>
     </RelativeLayout>
-</LinearLayout><!-- From: file:/D:/workspace/svmuu/SLIB/src/main/res/layout/pull_to_refresh_header.xml -->
+</LinearLayout>
