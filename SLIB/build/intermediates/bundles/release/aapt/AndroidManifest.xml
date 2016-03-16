@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sp.lib" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <application android:allowBackup="false" >
+        <activity
+            android:name="com.sp.lib.demo.SlibDemo"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

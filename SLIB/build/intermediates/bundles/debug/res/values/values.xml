@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="menuDrawerStyle"/>
+    <color name="album_btn_normal_color">#cfcfcf</color>
+    <color name="album_btn_pressed_color">#333333</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="md__defaultBackground">#FF555555</color>
+    <declare-styleable name="ITab"><attr format="color|reference" name="indicator"/><attr format="boolean" name="showIndicator"/><attr format="dimension" name="indicateHeight"/></declare-styleable>
+    <declare-styleable name="LockView"><attr format="reference" name="src"/><attr format="dimension" name="verticalSpacing"/><attr format="dimension" name="horizontalSpacing"/><attr format="string" name="password"/><attr format="reference" name="lineColor"/><attr format="color" name="failColor"/><attr format="color" name="successColor"/><attr format="enum" name="layoutSquare"><enum name="width" value="1"/><enum name="height" value="2"/><enum name="shorter" value="3"/><enum name="longer" value="4"/></attr></declare-styleable>
+    <declare-styleable name="MenuDrawer"><attr format="reference" name="mdContentBackground"/><attr format="reference" name="mdMenuBackground"/><attr format="dimension" name="mdMenuSize"/><attr format="reference" name="mdActiveIndicator"/><attr format="boolean" name="mdDropShadowEnabled"/><attr format="dimension" name="mdDropShadowSize"/><attr format="color" name="mdDropShadowColor"/><attr format="reference" name="mdDropShadow"/><attr format="dimension" name="mdTouchBezelSize"/><attr format="boolean" name="mdAllowIndicatorAnimation"/><attr format="integer" name="mdMaxAnimationDuration"/><attr format="reference" name="mdSlideDrawable"/><attr format="string" name="mdDrawerOpenUpContentDescription"/><attr format="string" name="mdDrawerClosedUpContentDescription"/><attr format="boolean" name="mdDrawOverlay"/><attr format="enum" name="mdPosition"><enum name="left" value="0"/><enum name="top" value="1"/><enum name="right" value="2"/><enum name="bottom" value="3"/><enum name="start" value="4"/><enum name="end" value="5"/></attr></declare-styleable>
+    <declare-styleable name="ParallaxContainer"><attr format="float" name="a_in"/><attr format="float" name="a_out"/><attr format="float" name="x_in"/><attr format="float" name="x_out"/><attr format="float" name="y_in"/><attr format="float" name="y_out"/></declare-styleable>
+    <declare-styleable name="PasswordInputView"><attr format="color" name="borderColor"/><attr format="color" name="contentColor"/><attr format="dimension" name="borderRadius"/><attr format="integer" name="passwordLength"/><attr format="color" name="passwordColor"/><attr format="dimension" name="passwordRadius"/><attr format="dimension" name="cellWidth"/></declare-styleable>
+    <declare-styleable name="SimpleTab"><attr format="reference" name="tabIcon"/><attr format="dimension" name="tabTextSize"/><attr format="boolean" name="tabChecked"/><attr format="color|reference" name="tabTextColors"/><attr format="dimension" name="tabIconPadding"/><attr format="string" name="tabText"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_margin">3dp</dimen>
+    <dimen name="pciture_view_pager_margin">80dp</dimen>
+    <dimen name="photo_album_item_size">120dp</dimen>
+    <dimen name="picture_action_bar_button_margin">0dp</dimen>
+    <dimen name="picture_action_bar_height">48dp</dimen>
+    <dimen name="picture_action_bar_page_index_text_size">18dp</dimen>
+    <dimen name="picture_album_column_margin">5dp</dimen>
+    <dimen name="picture_album_item_title_height">30dp</dimen>
+    <dimen name="picture_album_text_margin">6dp</dimen>
+    <dimen name="picture_album_title_text_size">12dp</dimen>
+    <dimen name="picture_album_top_margin">10dp</dimen>
+    <dimen name="picture_album_view_margin">8dp</dimen>
+    <dimen name="picture_album_view_margin_bottom">9dp</dimen>
+    <dimen name="picture_count_text_size">12dp</dimen>
+    <dimen name="picture_loading_text_top_margin">12dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_reload_text_size">16dp</dimen>
+    <dimen name="picture_user_guide_margin">8dp</dimen>
+    <dimen name="tab_corners">8px</dimen>
+    <drawable name="album_btn_normal">#485050</drawable>
+    <drawable name="album_btn_pressed">#808383</drawable>
+    <drawable name="tran">#00000000</drawable>
+    <item name="NotifyCationId_1" type="id"/>
+    <item name="NotifyCationId_2" type="id"/>
+    <item name="anim_info" type="id"/>
+    <item name="brand_add_id" type="id"/>
+    <item name="clear" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="listChildTag" type="id"/>
+    <item name="mdActiveViewPosition" type="id"/>
+    <item name="mdContent" type="id"/>
+    <item name="mdMenu" type="id"/>
+    <item name="md__content" type="id"/>
+    <item name="md__drawer" type="id"/>
+    <item name="md__menu" type="id"/>
+    <item name="md__translationX" type="id"/>
+    <item name="md__translationY" type="id"/>
+    <item name="parallax_pager" type="id"/>
+    <item name="parallax_view_tag" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="slib_clear" type="id"/>
+    <item name="slib_color" type="id"/>
+    <item name="slib_delete" type="id"/>
+    <item name="slib_next" type="id"/>
+    <item name="slib_orientation" type="id"/>
+    <item name="slib_position" type="id"/>
+    <item name="slib_previous" type="id"/>
+    <item name="slib_share" type="id"/>
+    <item name="slib_toast_text_1" type="id"/>
+    <item name="title" type="id"/>
+    <item name="webview" type="id"/>
+    <integer name="slib_anim_duration">280</integer>
+    <integer name="windowAnimDuration">300</integer>
+    <integer name="windowAnimDurationLong">400</integer>
+    <string name="action_settings">Settings</string>
+    <string name="all">全部</string>
+    <string name="alread_newest">已经是最新版本了！</string>
+    <string name="fail">失败</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="i_know">我知道了</string>
+    <string name="landscape">横屏</string>
+    <string name="loadFaile">加载失败</string>
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <string name="network_is_not_open">没有可用的网络连接</string>
+    <string name="no">取消</string>
+    <string name="other">其他</string>
+    <string name="picture_image_loading">正在加载…</string>
+    <string name="picture_load_image_failed">点击屏幕，重新加载</string>
+    <string name="picture_next_album">下一组：</string>
+    <string name="picture_previous_album">上一组：</string>
+    <string name="picture_save_fail">保存图片失败</string>
+    <string name="picture_save_succeed">图片已保存到相册</string>
+    <string name="portrait">竖屏</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开后加载</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉加载更多</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="request_is_failed">请求失败！</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="xsearch_loading">正在加载中…</string>
+    <string name="yes">确定</string>
+    <style name="Widget"/>
+    <style name="Widget.MenuDrawer">
+        <item name="mdMenuBackground">@color/md__defaultBackground</item>
+        <item name="mdContentBackground">?android:attr/windowBackground</item>
+        <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
+        <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
+    </style>
+    <style name="debug_button" parent="android:Widget.Button">
+
+    </style>
+    <style name="popup_window_animation">
+        <item name="android:windowEnterAnimation">@anim/window_enter</item>
+        <item name="android:windowExitAnimation">@anim/window_exit</item>
+    </style>
+</resources>
