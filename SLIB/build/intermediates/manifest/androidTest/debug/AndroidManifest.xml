@@ -13,12 +13,8 @@
         android:label="Tests for com.sp.lib.test"
         android:targetPackage="com.sp.lib.test" />
 
-    <application android:allowBackup="false" >
+    <application>
         <uses-library android:name="android.test.runner" />
-
-        <activity
-            android:name="com.sp.lib.demo.SlibDemo"
-            android:launchMode="singleTop" />
     </application>
 
 </manifest>
