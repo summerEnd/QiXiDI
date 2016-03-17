@@ -1,4 +1,4 @@
-package com.sumauto.widget.list.refresh;
+package com.sumauto.widget.list;
 
 import android.content.Context;
 import android.util.AttributeSet;

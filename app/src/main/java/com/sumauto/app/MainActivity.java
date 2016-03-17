@@ -11,11 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.sp.lib.activity.PhotoAlbumActivity;
-import com.sp.lib.common.util.RandomUtils;
-import com.sp.lib.widget.list.FloatHeadRecyclerView;
-import com.sp.lib.widget.list.adapter.BaseHolder;
-import com.sp.lib.widget.list.adapter.ListAdapter;
+import com.sumauto.activity.PhotoAlbumActivity;
+import com.sumauto.common.util.RandomUtils;
+import com.sumauto.widget.recycler.FloatHeadRecyclerView;
+import com.sumauto.widget.recycler.adapter.BaseHolder;
+import com.sumauto.widget.recycler.adapter.ListAdapter;
 import com.sumauto.app.bean.Bean;
 import com.sumauto.app.bean.DemoBean;
 

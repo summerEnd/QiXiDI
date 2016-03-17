@@ -1,4 +1,4 @@
-package com.sumauto.widget.list;
+package com.sumauto.widget.recycler;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;

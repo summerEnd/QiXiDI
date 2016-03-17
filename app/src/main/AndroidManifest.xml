@@ -19,7 +19,7 @@
         <activity android:name=".SecondActivity"
             android:theme="@style/Translucent">
         </activity>
-        <activity android:name="com.sp.lib.activity.PhotoAlbumActivity"/>
+        <activity android:name="com.sumauto.activity.PhotoAlbumActivity"/>
     </application>
 
 </manifest>

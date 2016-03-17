@@ -1,4 +1,4 @@
-package com.sumauto.widget.nav.title;
+package com.sumauto.widget.nav;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;

@@ -1,4 +1,4 @@
-package com.sumauto.widget.list.refresh;
+package com.sumauto.widget.list;
 
 import android.annotation.TargetApi;
 import android.content.Context;

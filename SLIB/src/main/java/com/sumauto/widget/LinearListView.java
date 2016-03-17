@@ -1,4 +1,4 @@
-package com.sumauto.widget.list;
+package com.sumauto.widget;
 
 import android.content.Context;
 import android.database.DataSetObserver;

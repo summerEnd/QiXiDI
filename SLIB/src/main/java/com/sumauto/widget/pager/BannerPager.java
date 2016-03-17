@@ -100,7 +100,7 @@ public class BannerPager extends FrameLayout implements RadioGroup.OnCheckedChan
         }
 
         dotRadioGroup.setOnCheckedChangeListener(this);
-        pager.setOnPageChangeListener(new BannerPagerListener());
+        pager.addOnPageChangeListener(new BannerPagerListener());
         ArrayList<View> views = new ArrayList<View>();
         DisplayImageOptions imageOptions = new DisplayImageOptions.Builder().cacheOnDisk(true).build();
         for (int i = 0; i < imageUrls.size(); i++) {

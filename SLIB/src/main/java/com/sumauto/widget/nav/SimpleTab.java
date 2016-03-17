@@ -14,7 +14,6 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.sp.lib.R;
-import com.sumauto.widget.nav.title.ITab;
 
 public class SimpleTab extends View implements ITab {
 

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 
-import com.sp.lib.common.util.ActivityDismissUtils;
+import com.sumauto.common.util.ActivityDismissUtils;
 
 public class SecondActivity extends AppCompatActivity {
 

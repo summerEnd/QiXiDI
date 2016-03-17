@@ -1,4 +1,4 @@
-package com.sumauto.widget.list.adapter;
+package com.sumauto.widget.recycler.adapter;
 
 import android.content.Context;
 

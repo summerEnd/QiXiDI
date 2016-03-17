@@ -1,4 +1,4 @@
-package com.sumauto.widget.list.refresh;
+package com.sumauto.widget.list;
 
 /**
  * 下拉刷新和上拉加载更多的界面接口
