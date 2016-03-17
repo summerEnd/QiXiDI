@@ -66,6 +66,8 @@ dependencies {
             'com.android.support:recyclerview-v7:' + androidSupportVersion,
             'com.jakewharton:butterknife:7.0.1'
     )
-    compile 'com.eftimoff:android-pathview:1.0.8@aar'
     compile project(':SLIB')
+    compile 'com.eftimoff:android-pathview:1.0.8@aar'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
 }

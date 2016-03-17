@@ -1,99 +1,77 @@
 package com.sumauto.app;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.sumauto.activity.PhotoAlbumActivity;
-import com.sumauto.common.util.RandomUtils;
-import com.sumauto.widget.recycler.FloatHeadRecyclerView;
-import com.sumauto.widget.recycler.adapter.BaseHolder;
-import com.sumauto.widget.recycler.adapter.ListAdapter;
-import com.sumauto.app.bean.Bean;
-import com.sumauto.app.bean.DemoBean;
+import com.sumauto.app.dummy.DummyContent;
+import com.sumauto.widget.CheckableLinearLayout;
 
-import java.util.ArrayList;
-import java.util.List;
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener{
 
-    private DemoAdapter           adapter;
-    private FloatHeadRecyclerView mFloatHeaderView;
-    private DemoHolder            mViewHolder;
+    CheckableLinearLayout checkedTab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mFloatHeaderView = (FloatHeadRecyclerView) findViewById(R.id.floatHeaderView);
-        adapter = new DemoAdapter(this, getBeans());
-        mViewHolder = new DemoHolder(LayoutInflater.from(this).inflate(R.layout.head_view, mFloatHeaderView, false));
+        ButterKnife.bind(this);
+    }
 
-        mFloatHeaderView.setCallback(new FloatHeadRecyclerView.Callback() {
-            @Override
-            public void invalidateHeader(RecyclerView.ViewHolder holder, int position) {
-                DemoHolder demoHolder = (DemoHolder) holder;
-                demoHolder.setData(adapter.getDataList().get(position));
+    public void onTabClick(View v) {
+        int id = v.getId();
+        if (id == R.id.tab_main_publish) {
+            return;
+        }
+        if (v == checkedTab) return;
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        String tag = String.valueOf(id);
+        Fragment fragment = fragmentManager.findFragmentByTag(tag);
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+
+        if (fragment == null) {
+            switch (id) {
+                case R.id.tab_main_home:
+                    fragment = new HomeFragment();
+                    break;
+                case R.id.tab_main_search:
+                    fragment = new SearchFragment();
+                    break;
+                case R.id.tab_main_newsFeed:
+                    fragment = new NewsFeedFragment();
+                    break;
+                case R.id.tab_main_mine:
+                    fragment = new MineFragment();
+                    break;
             }
-        });
+            if (fragment != null) ft.add(R.id.layout_fragment_container, fragment, tag);
+        }
+        else {
+            ft.show(fragment);
+        }
 
-        mFloatHeaderView.getRecyclerView().setAdapter(adapter);
-        mFloatHeaderView.setHeaderViewHolder(mViewHolder);
+        CheckableLinearLayout tab = (CheckableLinearLayout) v;
+        tab.setChecked(true);
+        if (checkedTab != null) {
+            Fragment oldFragment=fragmentManager.findFragmentByTag(String.valueOf(checkedTab.getId()));
+            if (oldFragment!=null){
+                ft.hide(oldFragment);
+            }
+            checkedTab.setChecked(false);
+        }
+        ft.commit();
+        checkedTab = tab;
     }
 
-    @NonNull
-    private ArrayList<Bean> getBeans() {
-        ArrayList<Bean> beans = new ArrayList<>();
-        String[] stringArray = getResources().getStringArray(R.array.debug_string_array);
-        for (String item : stringArray) {
-            String title = RandomUtils.randomArticle(6, 18);
-            String content = item + RandomUtils.randomArticle(6, 100);
-            beans.add(new DemoBean(title, content));
-        }
-        return beans;
-    }
+    @Override
+    public void onListFragmentInteraction(DummyContent.DummyItem item) {
 
-    public class DemoAdapter extends ListAdapter {
-
-        public DemoAdapter(Context context, List<Bean> data) {
-            super(context, data);
-        }
-
-        @Override
-        public BaseHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new DemoHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false));
-        }
-    }
-
-    private class DemoHolder extends BaseHolder {
-        final TextView tv_date;
-        final TextView tv_content;
-
-        public DemoHolder(View itemView) {
-            super(itemView);
-            tv_date = (TextView) itemView.findViewById(R.id.tv_date);
-            tv_content = (TextView) itemView.findViewById(R.id.tv_content);
-        }
-
-        @Override
-        public void onClick(View v) {
-            super.onClick(v);
-            startActivity(new Intent(v.getContext(), PhotoAlbumActivity.class));
-        }
-
-        @Override
-        protected void onInit(Object data) {
-            super.onInit(data);
-            DemoBean bean = (DemoBean) data;
-            tv_date.setText(bean.getName());
-            if (tv_content != null) tv_content.setText(bean.getContent());
-        }
     }
 }

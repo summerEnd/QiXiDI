@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.sumauto.widget.material.MaterialLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +31,7 @@ public abstract class STestActivity extends ListActivity {
      */
     protected abstract void addTest(List<Class<? extends Activity>> activities);
 
-    private class MyAdapter extends BaseAdapter implements View.OnClickListener{
+    private class MyAdapter extends BaseAdapter implements View.OnClickListener {
         @Override
         public int getCount() {
             return activities.size();
@@ -50,29 +49,26 @@ public abstract class STestActivity extends ListActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            MaterialLayout layout;
+            TextView textView;
             if (convertView == null) {
-                layout = new MaterialLayout(STestActivity.this);
-                layout.setMaterialBackground(Color.WHITE);
-                layout.setMaterialWave(Color.LTGRAY);
 
-                TextView textView = new TextView(STestActivity.this);
+                textView = new TextView(STestActivity.this);
                 textView.setTextColor(Color.BLACK);
                 textView.setTextSize(17);
-                textView.setPadding(10,15,10,15);
-                layout.addView(textView);
-                layout.setOnClickListener(this);
-            } else {
-                layout = (MaterialLayout) convertView;
+                textView.setPadding(10, 15, 10, 15);
+
             }
-            ((TextView) layout.getChildAt(1)).setText(activities.get(position).getSimpleName());
-            layout.setTag(position);
-            return layout;
+            else {
+                textView = (TextView) convertView;
+            }
+            textView.setText(activities.get(position).getSimpleName());
+            textView.setTag(position);
+            return textView;
         }
 
         @Override
         public void onClick(View v) {
-            int position= (int) v.getTag();
+            int position = (int) v.getTag();
             startActivity(new Intent(STestActivity.this, activities.get(position)));
         }
     }

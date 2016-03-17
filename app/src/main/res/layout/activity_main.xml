@@ -1,16 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.sumauto.app.MainActivity">
 
+    <FrameLayout
+        android:id="@+id/layout_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_alignParentTop="true" android:background="#d00"
+        >
 
-    <com.sumauto.widget.recycler.FloatHeadRecyclerView
-        android:id="@+id/floatHeaderView"
-        android:layout_width="match_parent" android:layout_height="0dp"
-        android:layout_weight="1"/>
-</LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0a0"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" android:paddingTop="3dp">
+        <com.sumauto.widget.CheckableLinearLayout
+            android:id="@+id/tab_main_home"
+            style="@style/main_tab_item">
+            <ImageView
+                style="@style/main_tab_item_image"
+                android:contentDescription="@string/home" android:src="@drawable/ic_menu_orientation"/>
+            <CheckedTextView
+                style="@style/main_tab_item_text" android:text="@string/home"/>
+        </com.sumauto.widget.CheckableLinearLayout>
+        <android.support.v4.widget.Space
+            style="@style/horizontal_space"/>
+        <com.sumauto.widget.CheckableLinearLayout
+            android:id="@+id/tab_main_search"
+            style="@style/main_tab_item">
+            <ImageView
+                style="@style/main_tab_item_image"
+                android:contentDescription="@string/search" android:src="@drawable/ic_menu_orientation"/>
+            <CheckedTextView
+                style="@style/main_tab_item_text" android:text="@string/search"/>
+        </com.sumauto.widget.CheckableLinearLayout>
+        <android.support.v4.widget.Space
+            style="@style/horizontal_space"/>
+        <!-- 用来占位，保证文字等距摆放-->
+        <com.sumauto.widget.CheckableLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical" android:visibility="invisible">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:contentDescription="@string/search"
+                android:src="@drawable/ic_menu_orientation"/>
+            <CheckedTextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/search"/>
+        </com.sumauto.widget.CheckableLinearLayout>
+        <android.support.v4.widget.Space
+            style="@style/horizontal_space"/>
+        <com.sumauto.widget.CheckableLinearLayout
+            android:id="@+id/tab_main_newsFeed"
+            style="@style/main_tab_item">
+            <ImageView
+                style="@style/main_tab_item_image"
+                android:contentDescription="@string/news_feed" android:src="@drawable/ic_menu_orientation"/>
+            <CheckedTextView
+                style="@style/main_tab_item_text" android:text="@string/news_feed"/>
+        </com.sumauto.widget.CheckableLinearLayout>
+        <android.support.v4.widget.Space
+            style="@style/horizontal_space"/>
+        <com.sumauto.widget.CheckableLinearLayout
+            android:id="@+id/tab_main_mine"
+            style="@style/main_tab_item">
+            <ImageView
+                style="@style/main_tab_item_image"
+                android:contentDescription="@string/mine" android:src="@drawable/ic_menu_orientation"/>
+            <CheckedTextView
+                style="@style/main_tab_item_text" android:text="@string/mine"/>
+        </com.sumauto.widget.CheckableLinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_main_publish"
+        style="@style/main_tab_item"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|bottom" android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" android:contentDescription="@string/publish"
+            android:src="@drawable/ic_camera"/>
+        <CheckedTextView
+            style="@style/main_tab_item_text"
+            android:text="@string/publish"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -12,9 +12,37 @@
         <item name="android:windowBackground">@drawable/Translucent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
-        <!-- Note that we use the base animation style here (that is no
-             animations) because we really have no idea how this kind of
-             activity will be used. -->
+    </style>
+
+    <style name="FullScreen" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="main_tab_item">
+        <item name="android:onClick">onTabClick</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="main_tab_item_image">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="main_tab_item_text">
+        <item name="android:textColor">@color/text_color_selectable</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="horizontal_space">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
     </style>
 
 </resources>
