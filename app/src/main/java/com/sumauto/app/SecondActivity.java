@@ -6,29 +6,71 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
+import com.sumauto.app.dummy.DummyContent;
 import com.sumauto.common.util.ActivityDismissUtils;
 
 public class SecondActivity extends AppCompatActivity {
 
 
     private ActivityDismissUtils.SwipeDismiss swipeDismiss;
+    int visibility=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         swipeDismiss = ActivityDismissUtils.getSwipeDismiss(this);
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
-        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
-            @Override
-            public Fragment getItem(int position) {
-                return new DemoFragment();
-            }
 
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
-            public int getCount() {
-                return 5;
+            public void onClick(View v) {
+                v.setSystemUiVisibility(visibility);
+            }
+        });
+
+        a(R.id.SYSTEM_UI_FLAG_LOW_PROFILE);
+        a(R.id.SYSTEM_UI_FLAG_FULLSCREEN);
+        a(R.id.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+        a(R.id.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        a(R.id.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
+        a(R.id.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+    }
+
+    void a(int id) {
+        CheckBox cb = (CheckBox) findViewById(id);
+        cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                int flag=0;
+                switch (buttonView.getId()) {
+                    case R.id.SYSTEM_UI_FLAG_LOW_PROFILE:
+                        flag=View.SYSTEM_UI_FLAG_LOW_PROFILE;
+                        break;
+                    case R.id.SYSTEM_UI_FLAG_FULLSCREEN:
+                        flag=View.SYSTEM_UI_FLAG_FULLSCREEN;
+                        break;
+                    case R.id.SYSTEM_UI_FLAG_LAYOUT_STABLE:
+                        flag=View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+
+                        break;
+                    case R.id.SYSTEM_UI_FLAG_IMMERSIVE_STICKY:
+                        flag=View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+
+                        break;
+                    case R.id.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION:
+                        flag=View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+
+                        break;
+                    case R.id.SYSTEM_UI_FLAG_HIDE_NAVIGATION:
+                        flag=View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+                        break;
+                }
+                if (isChecked)visibility|=flag;
+                else visibility^=flag;
             }
         });
     }
@@ -38,4 +80,5 @@ public class SecondActivity extends AppCompatActivity {
         swipeDismiss.process(ev);
         return super.dispatchTouchEvent(ev);
     }
+
 }

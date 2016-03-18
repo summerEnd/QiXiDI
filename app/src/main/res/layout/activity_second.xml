@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#fff"
     android:orientation="vertical"
     tools:context="com.sumauto.app.SecondActivity">
-    <ImageView
-        android:background="#e0f"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
-    <Button
-        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent" android:layout_height="match_parent"/>
-</LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:fitsSystemWindows="true"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/SYSTEM_UI_FLAG_LOW_PROFILE"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SYSTEM_UI_FLAG_LOW_PROFILE"/>
+        <CheckBox
+            android:id="@+id/SYSTEM_UI_FLAG_FULLSCREEN"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SYSTEM_UI_FLAG_FULLSCREEN"/>
+        <CheckBox
+            android:id="@+id/SYSTEM_UI_FLAG_LAYOUT_STABLE"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SYSTEM_UI_FLAG_LAYOUT_STABLE"/>
+        <CheckBox
+            android:id="@+id/SYSTEM_UI_FLAG_IMMERSIVE_STICKY"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SYSTEM_UI_FLAG_IMMERSIVE_STICKY"/>
+        <CheckBox
+            android:id="@+id/SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"/>
+        <CheckBox
+            android:id="@+id/SYSTEM_UI_FLAG_HIDE_NAVIGATION"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SYSTEM_UI_FLAG_HIDE_NAVIGATION"/>
+    </LinearLayout>
+</FrameLayout>

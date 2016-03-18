@@ -7,4 +7,8 @@
     <string name="publish">发布</string>
     <string name="news_feed">动态</string>
     <string name="mine">我的</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -76,6 +76,7 @@ public class ActivityDismissUtils {
                 }
                 case MotionEvent.ACTION_UP: {
                     if (handleSlide) {
+                        if (eventX-startX==0)return;
                         float fromXValue = x / contentView.getWidth();
                         final float toXValue;
                         if (currentPosition > closeFactor) {

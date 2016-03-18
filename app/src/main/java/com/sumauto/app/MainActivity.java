@@ -1,5 +1,6 @@
 package com.sumauto.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -40,9 +41,12 @@ public class MainActivity extends AppCompatActivity implements ItemFragment.OnLi
             switch (id) {
                 case R.id.tab_main_home:
                     fragment = new HomeFragment();
+                    //todo remove it,just for test
+                    startActivity(new Intent(this,FullscreenActivity.class));
                     break;
                 case R.id.tab_main_search:
                     fragment = new SearchFragment();
+                    startActivity(new Intent(this,SecondActivity.class));
                     break;
                 case R.id.tab_main_newsFeed:
                     fragment = new NewsFeedFragment();

@@ -6,4 +6,6 @@
 
     <drawable name="Translucent">#5000</drawable>
     <color name="textBlack">#3a3a3a</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>
